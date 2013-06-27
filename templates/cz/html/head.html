@@ -1,0 +1,25 @@
+<DIV class=header>
+    <H1 class=logo><A title="{aspcms:sitetitle}" href="{aspcms:sitepath}/"><img src="{aspcms:sitelogo}" height="0" /></A> </H1>
+    <DIV class=headerR>
+       
+     
+        
+    </DIV>
+	<DIV class=clear></DIV>
+    <DIV class=navigation>
+        <UL class=menu id=menu-mainmenu>
+            <LI class="menu-item" id=menu-item-393><a href="{aspcms:sitepath}{aspcms:languagepath}">Ê×Ò³</A> </LI>
+        {aspcms:navlist}
+            <LI class="menu-item" id=menu-item-382><A href="[navlist:link]">[navlist:name]</A> 
+               {if:[navlist:subcount]>0}
+                <UL class=sub-menu>
+                {aspcms:subnavlist type=[navlist:sortid]}
+                <LI class="menu-item " id=menu-item-376><A href="[subnavlist:link]">[subnavlist:name]</A> </LI>
+                {/aspcms:subnavlist}
+                </UL>
+                {end if}
+            </LI>
+        {/aspcms:navlist}
+        </UL>
+    </DIV>
+</DIV>
